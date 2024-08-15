@@ -1,0 +1,12 @@
+{
+  "name": "sebastian picardo",
+  "email": "seba@ejemplo.cl",
+  "password": "seba123",
+  "phones": [
+    {
+      "number": "11",
+      "citycode": "1",
+      "contrycode": "57"
+    }
+  ]
+}
