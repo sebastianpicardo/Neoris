@@ -1,10 +1,9 @@
-package com.neori.user_registration_api.Controller.Security;
+package com.neori.user_registration_api.Security;
 
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.neori.user_registration_api.Controller.Service.JWTService;
-
+import com.neori.user_registration_api.Service.JWTService;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

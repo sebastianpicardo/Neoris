@@ -1,4 +1,4 @@
-package com.neori.user_registration_api.Controller.Entity;
+package com.neori.user_registration_api.Entity;
 
 
 import jakarta.persistence.CascadeType;

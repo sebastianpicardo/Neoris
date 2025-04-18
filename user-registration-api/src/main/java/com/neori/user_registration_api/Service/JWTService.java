@@ -1,10 +1,10 @@
-package com.neori.user_registration_api.Controller.Service;
+package com.neori.user_registration_api.Service;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.stereotype.Service;
 
-import com.neori.user_registration_api.Controller.Entity.User;
+import com.neori.user_registration_api.Entity.User;
 
 import java.util.Date;
 

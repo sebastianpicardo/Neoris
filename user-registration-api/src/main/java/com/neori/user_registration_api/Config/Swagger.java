@@ -1,4 +1,4 @@
-package com.neori.user_registration_api.Controller.Config;
+package com.neori.user_registration_api.Config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

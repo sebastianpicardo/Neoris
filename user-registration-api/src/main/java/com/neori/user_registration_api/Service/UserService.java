@@ -1,13 +1,13 @@
-package com.neori.user_registration_api.Controller.Service;
+package com.neori.user_registration_api.Service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.neori.user_registration_api.Controller.Service.JWTService;
-import com.neori.user_registration_api.Controller.Entity.User;
-import com.neori.user_registration_api.Controller.Repository.UserRepository;
+import com.neori.user_registration_api.Entity.User;
+import com.neori.user_registration_api.Repository.UserRepository;
+import com.neori.user_registration_api.Service.JWTService;
 
 import java.time.LocalDateTime;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package com.neori.user_registration_api.Controller.Controller;
+package com.neori.user_registration_api.Controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,15 +9,15 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
-import com.neori.user_registration_api.Controller.Entity.Phone;
-import com.neori.user_registration_api.Controller.Entity.User;
-import com.neori.user_registration_api.Controller.Repository.UserRepository;
-import com.neori.user_registration_api.Controller.Service.JWTService;
-import com.neori.user_registration_api.Controller.Service.UserService;
 import com.neori.user_registration_api.DTO.JwtResponse;
 import com.neori.user_registration_api.DTO.LoginRequestDTO;
 import com.neori.user_registration_api.DTO.UserRequestDTO;
+import com.neori.user_registration_api.Entity.Phone;
+import com.neori.user_registration_api.Entity.User;
 import com.neori.user_registration_api.Exception.ErrorResponse;
+import com.neori.user_registration_api.Repository.UserRepository;
+import com.neori.user_registration_api.Service.JWTService;
+import com.neori.user_registration_api.Service.UserService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

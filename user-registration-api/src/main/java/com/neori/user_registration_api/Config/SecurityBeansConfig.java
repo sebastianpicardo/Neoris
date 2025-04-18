@@ -1,4 +1,4 @@
-package com.neori.user_registration_api.Controller.Config;
+package com.neori.user_registration_api.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

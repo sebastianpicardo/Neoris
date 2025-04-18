@@ -1,9 +1,9 @@
-package com.neori.user_registration_api.Controller.Repository;
+package com.neori.user_registration_api.Repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.neori.user_registration_api.Controller.Entity.User;
+import com.neori.user_registration_api.Entity.User;
 
 import java.util.Optional;
 import java.util.UUID;
