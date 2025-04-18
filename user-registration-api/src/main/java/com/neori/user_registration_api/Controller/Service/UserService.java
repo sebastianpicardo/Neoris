@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.neori.user_registration_api.Controller.Service.JWTService;
 import com.neori.user_registration_api.Controller.Entity.User;
 import com.neori.user_registration_api.Controller.Repository.UserRepository;
 
@@ -18,6 +19,9 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private JWTService jwtService;
+    
     private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     public Optional<User> registerUser(User user) {
@@ -31,7 +35,9 @@ public class UserService {
         user.setModified(LocalDateTime.now());
         user.setLastLogin(LocalDateTime.now());
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.setToken(UUID.randomUUID().toString());
+        String token = jwtService.generateToken(user);
+        user.setToken(token);
+      //  user.setToken(UUID.randomUUID().toString());
         user.setIsActive(true);
         
         return Optional.of(userRepository.save(user));

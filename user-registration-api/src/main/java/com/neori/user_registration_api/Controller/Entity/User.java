@@ -22,7 +22,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-
     private String name;
     private String email;
     private String password;
@@ -36,7 +35,7 @@ public class User {
     @JoinColumn(name = "user_id")
     private List<Phone> phones;
 
-    // Getters y setters
+
     public UUID getId() {
         return id;
     }

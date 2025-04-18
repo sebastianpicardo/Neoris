@@ -17,12 +17,10 @@ public class Phone {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-
     private String number;
     private String citycode;
     private String contrycode;
 
-    // Getters y setters
     public UUID getId() {
         return id;
     }
